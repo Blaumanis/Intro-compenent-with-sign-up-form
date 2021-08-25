@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*global properties*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #d67777 url(/images/bg-intro-desktop.png);
+    font-family: 'Poppins', sans-serif;
+    display: flex; /*for centering elements*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    color: #fff;
+}
+
+.left h1 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 0;
+    line-height: 1.2;
+    ;
+}
+
+.left p{
+    line-height: 1.5;
+}
+
+/* right container */
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.money {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    background-color: rgb(106, 36, 197);
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 6px rgba(41, 40, 40, 0.5);
+    font-family: inherit;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.money:active {
+    outline: none;
+    transform: scale(0.95);
+}
+
+.money:hover {
+    box-shadow: none;
+}
+
+.money:focus {
+    outline: none;
+}
+
+.money a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.money a span {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+.form {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px 5px 0px 5px;
+}
+
+.form input {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba(148, 145, 145, 0.9);
+    font-family: inherit;
+}
+
+.form input 
+
+.form input[type=text] {
+    color: #000;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.form input[type=email] {
+    color: #000;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.form input[type=password] {
+    color: #000;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.form input::placeholder {
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.form small {
+    padding-left: 30px;
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.form.error small {
+    visibility: visible;
+}
+
+.form.error input {
+    border: 2px solid #e74c3c;
+}
+
+.form.success input {
+    border: 2px solid #2ecc71;
+}
+
+.free {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    background: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    word-spacing: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.free:active {
+    outline: none;
+    transform: scale(0.95);
+}
+
+.free:hover {
+    box-shadow: 3px 3px 5px 6px rgba(41, 40, 40, 0.5);
+}
+
+.free:focus {
+    outline: none;
+}
+
+.terms {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    color: rgb(0, 0, 0, 0.4);
+    font-weight: 600;
+}
+
+.terms a{
+    display: inline-block;
+    padding-left: 5px;
+    text-decoration: none;
+    color: hsl(0, 100%, 74%) ;
+    font-weight: bold;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.terms a:hover {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left h1 { 
+        line-height: 1;
+        font-size: 2.5rem;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .left p {
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 600px) {
+    .money {
+        width: 80%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .form {
+        width: 80%;
+        transition: all 0.3s ease-in-out;
+    }
+}
